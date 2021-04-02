@@ -1,0 +1,262 @@
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700&display=swap");
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 8rem;
+  letter-spacing: 0.1rem;
+  font-style: italic;
+  color: #40b48e;
+  text-shadow: 0 0.2rem 5rem rgb(119, 115, 115);
+  text-transform: uppercase;
+  margin: 4rem 0;
+}
+
+.search-form {
+  width: 60rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background-color: #d3d3d3;*/
+  border-radius: 0.5rem;
+  margin-bottom: 5rem;
+  /*box-shadow: 1rem 2rem 5rem #aaa;*/
+  position: relative;
+}
+
+.alert {
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  background-color: rgb(233, 72, 72);
+  width: calc(100% - 0.4rem);
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+}
+
+.alert h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.search-form input {
+  font-size: 2.7rem;
+  border: none;
+  border-bottom: 0.1rem solid #ccc;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  height:1.7em;
+}
+
+.search-form input[type="text"] {
+  padding: 0 0.5rem;
+  width: 60%;
+  color: #555;
+  
+}
+
+.search-form button {
+  width: 25%;
+  text-transform: uppercase;
+  background-color: #40b48e;
+  color: #fff;
+  height:2.3em;
+  font-size: 2em;
+}
+
+.recipes {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.recipe {
+  width: 30rem;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #d3d3d3;
+  padding: 2rem;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 2rem 3rem 5rem #aaa;
+}
+
+.recipe h2 {
+  background-color: rgba(161, 161, 161, 0.8);
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  right: 2.5rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-shadow: 0 0.5rem 0.5rem #555;
+  color: #fff;
+}
+
+.recipe h3 {
+  background-color: #40b48e;
+  border-radius:9em 0.5rem;
+  padding: 0.7rem 0.2rem;
+  position: absolute;
+  top: 32rem;
+  left: 6rem;
+  width:2em;
+  right: 2rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-shadow: 0 0.5rem 0.5rem #555;
+  color: #fff;
+}
+
+.recipe h2 {
+  background-color: rgba(161, 161, 161, 0.8);
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  right: 2.5rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-shadow: 0 0.5rem 0.5rem #555;
+  color: #fff;
+}
+
+.recipe img {
+  border-radius: 0.5rem;
+  object-fit: cover;
+  transition:all 300ms ease-in-out;
+}
+
+.recipe:hover img{
+  color:lightgray;
+  transform: scale(1.1);
+}
+.recipe a {
+  font-size: 1.8rem;
+  color: #40b48e;
+}
+
+
+
+.recipe button {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #40b48e;
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  margin-top: 1em;
+}
+
+
+
+/*#cont{
+  position: absolute;
+  top: 20rem;
+  left: 10rem;
+
+ 
+  
+  text-align: center;
+  z-index: 3;
+  transition:all 300ms ease-in-out;
+  
+  padding-right: 2px;
+}*/
+
+
+
+
+
+.in-list{
+  background-color: #f0f0f0;
+}
+
+.ingredient-list {
+  margin-top: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.ingredient-list li {
+  margin: 0.5rem 0;
+  background-color: #f0f0f0;
+
+}
+
+.ingredient-text {
+  font-size: 1.5rem;
+  color: #888;
+  background-color: #f0f0f0;
+}
+
+.ingredient-weight {
+  color: #40b48e;
+  font-size: 1.3rem;
+  background-color: #f0f0f0;
+}
+
+
+
+
+@media (max-width: 768px) {
+  
+  h1{
+    text-align: center;
+    font-size: 4.5rem;
+  }
+
+  .search-form {
+  width: 40rem;
+  height: 6rem;
+  flex-direction: column;
+  margin-top: 10px;
+  
+  
+}
+.search-form input {
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: 0.1rem solid #ccc;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  height:1.7em;
+  text-align: center;
+}
+
+}
+
